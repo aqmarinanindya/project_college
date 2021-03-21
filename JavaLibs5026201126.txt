@@ -1,0 +1,44 @@
+import javax.swing.JOptionPane;
+public class JavaLibs5026201126 {
+	public static void main(String[] args){
+	Object[] options = {"Mau banget!","Nggak deh!"};
+	int opsi = JOptionPane.showOptionDialog(null, "Hello! Ada pesan nih dari masa depan! Mau tahu?", "Pesan", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
+	if (opsi == JOptionPane.NO_OPTION)
+	{
+		System.exit(0);
+	}
+	String nama;
+	int umur;
+	int umurnanti;
+	nama = JOptionPane.showInputDialog("First of all, boleh tahu namamu siapa?");
+	umur = Integer.parseInt(JOptionPane.showInputDialog("Umur kamu berapa sekarang?"));
+	umurnanti = Integer.parseInt(JOptionPane.showInputDialog("Pingin dapet pesan dari " + nama + " di umur berapa?"));
+	int gap = Math.abs(umurnanti - umur);
+	String dream; 
+	dream = JOptionPane.showInputDialog("Apa cita-citamu?");
+	String dreamdes;
+	dreamdes = JOptionPane.showInputDialog("Sebutin satu kata yang mendeskripsikan " + dream + " ! ");
+	String hobby;
+	hobby = JOptionPane.showInputDialog("Hobimu apa?");
+	String food;
+	food = JOptionPane.showInputDialog("Apa makanan kesukaanmu, " + nama + " ?");
+	String reason;
+	reason = JOptionPane.showInputDialog("Kenapa kamu menyukai " + food + " ?");
+	Double fav = Double.parseDouble(JOptionPane.showInputDialog("Coba pilih 1 angka favoritmu antara 0 sampai 1!"));
+	Double test = Double.parseDouble(JOptionPane.showInputDialog("Quick random test! Berapa 3/2?"));
+	if (Math.abs(test - 1.5) < .00001)
+	{
+		//If the user inputs 1.5
+		JOptionPane.showMessageDialog(null, "Wah, kamu benar!");
+	}
+	else
+	{
+		//If the user inputs anything else than 1.5
+		JOptionPane.showMessageDialog(null, "Oops, belajar matematikanya lebih rajin ya:(");
+	}
+	String masalah;
+	masalah = JOptionPane.showInputDialog("How's life? Ada masalah apa yang lagi kamu pusingin sekarang?");
+	JOptionPane.showMessageDialog(null, "Hi, "+ nama +" yang berusia "+ umur +" ! Aku dirimu yang berusia "+ umurnanti +" . Tidak terasa ya, sudah " + gap + " tahun berlalu.\nSekarang aku sudah menjadi " + dream + " yang " + dreamdes + " seperti cita-citamu! Aku tahu banget nih, kalo kamu suka " + hobby + " kalo lagi free time. Oh ya, aku juga tahu sama makanan kesukaanmu loh!\nKamu sukaaa banget sama " + food + " karena " + reason + ". Aku inget deh dulu " + food + " harganya cuma " + fav + " USD alias murah banget!\nAku denger kamu lagi ada masalah nih.. Lagi pusing sama " + masalah + " yaa? FYI aja. keadaanku di umur " + umurnanti +" happy banget!\nSo, please don't lose hope and hang on there, " + nama + " ! Semua akan worth it pada akhirnya:)" );
+	JOptionPane.showMessageDialog(null, "Bye " + nama + " , Keep thriving for your goals!<3");
+}
+}
