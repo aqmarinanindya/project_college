@@ -1,0 +1,45 @@
+group: AthleteWorld
+Athlete = {
+IDAthlete, Name, Country, Discipline, Team
+'NW10021', 'AALERUD Katrine', 'Norway', 'Volley', 'Norway-1'
+'FL20098', 'nGuyen', 'Philipines', 'Hockey', 'Philipines-5'
+'IL009000', 'BECCARO Luca', 'Italy', 'Handball ', 'Italy-1'
+'IN435000', 'PutriDiana', 'Indonesia', 'Football', 'Indonesia-3'
+'SP30500', 'AGUIRRE Unai', 'Spain', 'Badminton', 'Spain-2'
+'SP22949', 'CANNONE Romain', 'Spain', 'Badminton', 'Spain-2'
+'CH39000', 'XiauXiau', 'Chile', 'Football', 'Chile-4'
+'NW30281', 'ERICHSEN Julie', 'Norway', 'Basketball', 'Norway-2'
+}
+Coaches = {
+IDCoach, CoachName, Country, CoachDiscipline
+'IL890', 'BLENGINI Gianlorenzo', 'Italy', 'Sprint'
+'NW107', 'BREIVIK Marit', 'Norway', 'Basketball'
+'SP067', 'DIDENKO Natalia', 'Spain', 'Badminton'
+'CH094', 'LETELIER Jose', 'Chile', 'Football'
+'IN188', 'LUKI hakim', 'Indonesia', 'Football'
+'FL165', 'JAMES norin', 'Philipines', 'Hockey'
+'HG201', 'MICHAEL douglas', 'Hungary', 'Football'
+}
+MedalTeam = {
+Team, Medal, Discipline
+'Indonesia-3', 'Gold', 'Football'
+'Spain-2', 'Gold', 'Badminton'
+}
+GenderAthlete = {
+IDAthlete, Gender
+'FL15200', 'Female'
+'SP22949', 'Male'
+'RW24351', 'Male'
+'NW30281', 'Female'
+'UG00122', 'Female'
+'NW10021', 'Female'
+}
+CoachInfo = {
+IDCoach, Age, yearsOfExperience
+'TR334', 42, 16
+'FL165', 39, 12
+'QT751', 52, 30
+'IL890', 50, 24
+'IN188', 45, 21
+'RO490', 44, 26
+}
